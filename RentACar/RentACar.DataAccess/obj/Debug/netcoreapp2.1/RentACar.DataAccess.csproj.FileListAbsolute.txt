@@ -1,0 +1,14 @@
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.DataAccess.deps.json
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.DataAccess.dll
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.AssemblyInfoInputs.cache
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.AssemblyInfo.cs
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.csprojAssemblyReference.cache
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.DataAccess.pdb
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.Core.dll
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.Entities.dll
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.Core.pdb
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\bin\Debug\netcoreapp2.1\RentACar.Entities.pdb
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.csproj.CopyComplete
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.dll
+C:\Users\yiba_\Desktop\Web Geliştirme Kursu\RentACar\RentACar.DataAccess\obj\Debug\netcoreapp2.1\RentACar.DataAccess.pdb

@@ -1,0 +1,41 @@
+﻿@model RentACar.MvcUI.Models.RentedCarsRecordListViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h3>You can view, update ,delete records or add new record.</h3>
+    <br />
+
+    <a class="btn btn-success" asp-controller="RentedCarsRecord" asp-action="SelectDate">Select Date to Add New Record</a>
+    <br /><br />
+    <table class="table table-striped table-responsive" style="text-align:center">
+        <thead>
+            <tr>
+                <th scope="col">Plate Number</th>
+                <th scope="col">Customer TC</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col" colspan="3">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var record in Model.RentedCarsRecords)
+            {
+            <tr>
+                <td>@record.PlateNumber</td>
+                <td>@record.TC</td>
+                <td>@record.StartDate.ToString("dd.MM.yyyy")</td>
+                <td>@record.EndDate.ToString("dd.MM.yyyy")</td>
+                <td><a class="btn btn-sm btn-info" asp-action="GoCarDetails" asp-route-carPlateNumber="@record.PlateNumber">Go Car Details</a></td>
+                <td><a class="btn btn-sm btn-warning" asp-action="GoCustomerDetails" asp-route-customerTC="@record.TC">Go Customer Details</a></td>
+                <td><a class="btn btn-sm btn-danger" asp-action="TakeDelivery" asp-route-rentedCarsRecordId="@record.Id">Take Delivery</a></td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

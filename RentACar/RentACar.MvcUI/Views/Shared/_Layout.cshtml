@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/bootstrap/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Rent A Car</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" asp-action="Index" asp-controller="Car">Cars <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index" asp-controller="Customer">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index" asp-controller="RentedCarsRecord">Active Rented Cars Records</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <a asp-controller="Account" asp-action="LogOff">Sign Out</a>
+            </span>
+        </div>
+    </nav>
+
+    <br />
+
+    <div class="container">
+        @if (TempData["message"] != null)
+        {
+            <div class="alert alert-warning" role="alert">@TempData["message"]</div>
+        }
+    </div>
+
+    <div class="col-md-12">
+        @RenderBody()
+
+    </div>
+
+
+    <script src="~/bootstrap/jquery/jquery-3.4.1.js"></script>
+    <script src="~/bootstrap/js/bootstrap.js"></script>
+    <script src="~/bootstrap/jquery/jquery.validate.js"></script>
+    <script src="~/bootstrap/jquery/jquery.validate.unobtrusive.js"></script>
+
+</body>
+</html>

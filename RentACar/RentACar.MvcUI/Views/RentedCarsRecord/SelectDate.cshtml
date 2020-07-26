@@ -1,0 +1,26 @@
+﻿@model RentACar.MvcUI.Models.RentedCarsRecordSelectDateViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "SelectDate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h3>Select Date</h3>
+    <br />
+
+    <form asp-controller="RentedCarsRecord" asp-action="Add" method="get">
+        <div class="form-group">
+            <label asp-for="@Model.StartDate"></label>
+            <input type="date" asp-for="@Model.StartDate" class="form-control" />
+            <span asp-validation-for="@Model.StartDate"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="@Model.EndDate"></label>
+            <input type="date" asp-for="@Model.EndDate" class="form-control" />
+            <span asp-validation-for="@Model.EndDate"></span>
+        </div>
+        <input type="submit" class="btn btn-success btn-lg btn-block" value="Select Date" />
+    </form>
+</div>

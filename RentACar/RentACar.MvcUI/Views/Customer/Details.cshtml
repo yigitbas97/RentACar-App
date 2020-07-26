@@ -1,0 +1,72 @@
+﻿@model RentACar.MvcUI.Models.CustomerDetailsViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h3>Customer Details</h3>
+    <br />
+
+    <table class="table table-striped table-responsive" style="text-align:center">
+        <thead>
+            <tr>
+                <th scope="col">TC</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">BirthDate</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Address</th>
+                <th scope="col">EMail</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Phone Number2</th>
+                <th scope="col">Driver Licence</th>
+                <th scope="col" colspan="3">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Customer.TC</td>
+                <td>@Model.Customer.Name</td>
+                <td>@Model.Customer.Surname</td>
+                <td>@{var age = DateTime.Now - Model.Customer.BirthDate;}@Convert.ToInt32(age.Days / 365)</td>
+                <td>@Model.Customer.Gender</td>
+                <td>@Model.Customer.Address</td>
+                <td>@Model.Customer.EMail</td>
+                <td>@Model.Customer.PhoneNumber</td>
+                <td>@Model.Customer.PhoneNumber2</td>
+                <td>@Model.Customer.DriverLicence</td>
+                <td><a class="btn btn-sm btn-warning" asp-action="Update" asp-route-customerId="@Model.Customer.Id">Update</a></td>
+                <td><a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-customerId="@Model.Customer.Id">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+    <h3>Rented Car Records For Choosed Customer</h3>
+    <table class="table table-striped table-responsive" style="text-align:center">
+        <thead>
+            <tr>
+                <th scope="col">Plate Number</th>
+                <th scope="col">TC</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var record in Model.Records)
+            {
+                <tr>
+                    <td>@record.PlateNumber</td>
+                    <td>@record.TC</td>
+                    <td>@record.StartDate.ToString("dd.MM.yyyy")</td>
+                    <td>@record.EndDate.ToString("dd.MM.yyyy")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

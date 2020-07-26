@@ -1,0 +1,50 @@
+﻿@model RentACar.MvcUI.Models.CustomerListViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <h3>You can view, update ,delete customer or add new customer.</h3>
+    <br />
+
+    <a class="btn btn-success" asp-controller="Customer" asp-action="Add">Add New Customer</a>
+    <br /><br />
+    <table class="table table-striped table-responsive" style="text-align:center">
+        <thead>
+            <tr>
+                <th scope="col">TC</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">BirthDate</th>
+                <th scope="col">Gender</th>
+                <th scope="col">EMail</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Driver Licence</th>
+                <th scope="col" colspan="3">Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var customer in Model.Customers)
+            {
+                <tr>
+                    <td>@customer.TC</td>
+                    <td>@customer.Name</td>
+                    <td>@customer.Surname</td>
+                    <td>@{var age = DateTime.Now - customer.BirthDate;}@Convert.ToInt32(age.Days/365)</td>
+                    <td>@customer.Gender</td>
+                    <td>@customer.EMail</td>
+                    <td>@customer.PhoneNumber</td>
+                    <td>@customer.DriverLicence</td>
+                    <td><a class="btn btn-sm btn-info" asp-action="Details" asp-route-customerId="@customer.Id">Details</a></td>
+                    <td><a class="btn btn-sm btn-warning" asp-action="Update" asp-route-customerId="@customer.Id">Update</a></td>
+                    <td><a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-customerId="@customer.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

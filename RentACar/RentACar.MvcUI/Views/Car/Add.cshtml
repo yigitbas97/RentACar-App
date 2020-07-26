@@ -1,0 +1,67 @@
+﻿@model RentACar.MvcUI.Models.CarAddViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+
+<div class="container">
+    <h3>Add New Car</h3>
+    <br />
+
+    <form asp-controller="Car" asp-action="Add" method="post">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.PlateNumber"></label>
+                    <input asp-for="@Model.PlateNumber" class="form-control" />
+                    <span asp-validation-for="@Model.PlateNumber"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Brand"></label>
+                    <input asp-for="@Model.Brand" class="form-control" />
+                    <span asp-validation-for="@Model.Brand"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Model"></label>
+                    <input asp-for="@Model.Model" class="form-control" />
+                    <span asp-validation-for="@Model.Model"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Type"></label>
+                    <select class="form-control" asp-for="@Model.Type" asp-items="@Model.TypeList"></select>
+                    <span asp-validation-for="@Model.Type"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="@Model.GearType"></label>
+                    <select class="form-control" asp-for="@Model.GearType" asp-items="@Model.GearTypeList"></select>
+                    <span asp-validation-for="@Model.GearType"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Color"></label>
+                    <select class="form-control" asp-for="@Model.Color" asp-items="@Model.ColorList"></select>
+                    <span asp-validation-for="@Model.Color"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.NumberOfSeats"></label>
+                    <select class="form-control" asp-for="@Model.NumberOfSeats" asp-items="@Model.NumberOfSeatsList"></select>
+                    <span asp-validation-for="@Model.NumberOfSeats"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="@Model.Year"></label>
+                    <input asp-for="@Model.Year" class="form-control" />
+                    <span asp-validation-for="@Model.Year"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <input type="hidden" asp-for="@Model.User" />
+            <input type="submit" class="btn btn-success btn-lg btn-block" value="Add New Car" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,246 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Business\\RentACar.Business.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Business\\RentACar.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Business\\RentACar.Business.csproj",
+        "projectName": "RentACar.Business",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Business\\RentACar.Business.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.DataAccess\\RentACar.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.DataAccess\\RentACar.DataAccess.csproj"
+              },
+              "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj",
+        "projectName": "RentACar.Core",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.DataAccess\\RentACar.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.DataAccess\\RentACar.DataAccess.csproj",
+        "projectName": "RentACar.DataAccess",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.DataAccess\\RentACar.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj"
+              },
+              "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj",
+        "projectName": "RentACar.Entities",
+        "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\RentACar.Entities.csproj",
+        "packagesPath": "C:\\Users\\yiba_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yiba_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj": {
+                "projectPath": "C:\\Users\\yiba_\\Desktop\\Web Geliştirme Kursu\\RentACar\\RentACar.Core\\RentACar.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

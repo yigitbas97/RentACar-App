@@ -1,0 +1,61 @@
+﻿@model RentACar.MvcUI.Models.RentedCarsRecordAddViewModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+
+    <h3>Rent A Car</h3>
+    <br />
+
+    <form asp-controller="RentedCarsRecord" asp-action="Add" method="post">
+        <div class="form-group">
+            <label asp-for="@Model.TC"></label>
+            <select class="form-control" asp-for="@Model.TC" asp-items="@Model.Customers"></select>
+            <span asp-validation-for="@Model.TC"></span>
+        </div>
+
+        <table class="table table-striped table-responsive" style="text-align:center">
+            <thead>
+                <tr>
+                    <th scope="col">Plate Number</th>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Model</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Gear Type</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">NumberOfSeats</th>
+                    <th scope="col" colspan="3">Operations</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var car in Model.Cars)
+                {
+                    <tr>
+                        <td>@car.PlateNumber</td>
+                        <td>@car.Brand</td>
+                        <td>@car.Model</td>
+                        <td>@car.Type</td>
+                        <td>@car.GearType</td>
+                        <td>@car.Color</td>
+                        <td>@car.NumberOfSeats</td>
+                        <td>
+                            <div class="form-group">
+                                <label><input asp-for="@Model.PlateNumber" value="@car.PlateNumber" type="radio" />Select</label>
+                                <span asp-validation-for="@car.PlateNumber"></span>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <input type="hidden" asp-for="@Model.State" />
+        <input type="hidden" asp-for="@Model.User" />
+        <input type="hidden" asp-for="@Model.StartDate" />
+        <input type="hidden" asp-for="@Model.EndDate" />
+        <input type="submit" class="btn btn-success btn-lg btn-block" value="Rent A Car" />
+    </form>
+
+</div>
