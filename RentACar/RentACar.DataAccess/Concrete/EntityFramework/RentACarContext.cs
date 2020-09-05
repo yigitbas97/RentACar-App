@@ -20,7 +20,6 @@ namespace RentACar.DataAccess.Concrete
         public DbSet<User> Users { get; set; }
 
         // Complex Types
-        public DbSet<CarMaintenance> CarMaintenances { get; set; }
         public DbSet<RentedCarsRecord> RentedCarsRecords { get; set; }
     }
 }
